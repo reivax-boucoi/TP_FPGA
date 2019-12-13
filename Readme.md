@@ -59,6 +59,6 @@ On utilise les mêmes signaux de comptage que pour le receiver (`current_frame_s
  - `TLASTP` : signale le dernier octet de données. Il entraîne une émission de l'EFD.
  - `TDONEP` : une impulsion est produite pour chaque envoi de données utiles (données + adresse destinataire) 
 
-###Transceiver
+### Transceiver
 
 Non implémenté car problème d'inclusion des composants non résolu.
