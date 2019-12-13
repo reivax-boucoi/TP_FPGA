@@ -1,4 +1,4 @@
-##TP VHDL : Ethernet-10 Core
+## TP VHDL : Ethernet-10 Core
 
 > ZENNARO Thomas <br>
 > BOURLOT Xavier <br>
