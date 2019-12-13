@@ -29,8 +29,8 @@ Nous avons tenté d'éliminer ces warning en contraignant la taille des signaux 
  
 ### Transmitter
 
-Fréquence maximale de fonctionnement : 311.915MHz <br>
-Nombre de flip flops : 14 <br>
+Fréquence maximale de fonctionnement : 189.056MHz <br>
+Nombre de flip flops : 20 <br>
 
 Le fichier `transmitter_test` implémente des tests d'emission de trames complètes et valides, de trames interrompues par reset ou abort, ainsi qu'une tentative de transmission durant le padding suite à une erreur..
 
