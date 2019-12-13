@@ -21,7 +21,7 @@ Il subsiste des warnings non résolus mais vus en cours avec vous :
 
 Nous avons tenté d'éliminer ces warning en contraignant la taille des signaux par l'utilisation de subtypes. Tout l'intervalle de valeurs est bien utilisé (vérifié en simulation). Chaque signal de sortie ne conserve également pas de valeur constante pendant la réception.
 
-####Choix d'implémentation des signaux
+#### Choix d'implémentation des signaux
  - `RENABP` : on considère qu'un niveau bas de `RENABP` remet à zéro les signaux relatifs aux données et les différents compteurs de trame (par opposition à une simple pause dans la réception).
  - `current_frame_step` : on utilise ce signal pour découper les différentes parties de la trame (0 correspond au SFD, 1 correspond à l'adresse destinataire...)
  - `current_addr_byte` : compteur d'octets dans chaque étape de la trame.
@@ -51,7 +51,7 @@ Il subsiste des warnings non résolus mais vus en cours avec vous :
 
 Nous avons tenté d'éliminer ces warning en contraignant la taille des signaux par l'utilisation de subtypes. Tout l'intervalle de valeurs est bien utilisé (vérifié en simulation). Chaque signal de sortie ne conserve également pas de valeur constante pendant l'émission.
 
-####Choix d'implémentation des signaux
+#### Choix d'implémentation des signaux
 
 On utilise les mêmes signaux de comptage que pour le receiver (`current_frame_step`, `current_addr_byte`, `clk_counter`).
  - `TABORTB` : on considère qu'un niveau haut de `TABORTB` remet à zéro les signaux relatifs aux données et les différents compteurs de trame.
