@@ -7,7 +7,7 @@ Le projet se décompose en 3 fichiers :
  - receiver
  - transmitter
  - transceiver (non fonctionnel)
-
+---
 ### Receiver
 
 Fréquence maximale de fonctionnement : 327.547MHz <br>
@@ -26,7 +26,7 @@ Nous avons tenté d'éliminer ces warning en contraignant la taille des signaux 
  - `current_frame_step` : on utilise ce signal pour découper les différentes parties de la trame (0 correspond au SFD, 1 correspond à l'adresse destinataire...)
  - `current_addr_byte` : compteur d'octets dans chaque étape de la trame.
  - `clk_counter` : divise la clock en 8 pour la réception par octets. Remise à zéro du compteur par débordement.
- 
+ ---
 ### Transmitter
 
 Fréquence maximale de fonctionnement : 189.056MHz <br>
@@ -58,7 +58,7 @@ On utilise les mêmes signaux de comptage que pour le receiver (`current_frame_s
  - `TFINISHP` : doit se lever après la fin de la trame, c.a.d. dès que l'EFD a été envoyé. Une levée prématurée de ce signal provoque une erreur et reset la transmission.
  - `TLASTP` : signale le dernier octet de données. Il entraîne une émission de l'EFD.
  - `TDONEP` : une impulsion est produite pour chaque envoi de données utiles (données + adresse destinataire) 
-
+---
 ### Transceiver
 
 Non implémenté car problème d'inclusion des composants non résolu.
